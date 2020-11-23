@@ -36,7 +36,7 @@ git clone https://github.com/salfaris/easy-pg-ps
     ```zsh
     pdflatex -output-dir=output main.tex
     ```
-    If you are using Sublime Text with LaTeXTools, then this package has a built-in setting to do exactly the above command. Likewise, there is usually a setting for other LaTeX editor like TexStudio and VSCode.
+    If you are using Sublime Text with LaTeXTools, then this package has a built-in setting to do exactly the above command so that you can just Cmd+B as usual. Likewise, there is usually a setting for other LaTeX editor like TexStudio and VSCode.
 
 ## :heavy_exclamation_mark: Warning for users
 1. Directory and file names are sensitive, so it is not advisable to change the names of, for example, `output` and `content` unless you know what you are doing.
