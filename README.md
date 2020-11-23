@@ -1,4 +1,4 @@
-# :page_facing_up: easy-pg-ps
+# :page_facing_up: easy-ps
 
 A simple and easy-to-use personal statement LaTeX framework. This solves the problem of messy files when writing personal statements for multiple universities.
 
