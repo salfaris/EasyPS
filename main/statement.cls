@@ -3,19 +3,14 @@
 
 \LoadClass[12pt]{article}
 
-\RequirePackage{currfile}
 \RequirePackage{lipsum}
 \RequirePackage{mathptmx}
 \RequirePackage{geometry}
-    \geometry{
-        a4paper,
-        margin=1in,
-    }
 
+% LAYOUT SETTINGS
+\geometry{a4paper, margin=1in}
 \setlength{\parskip}{0.5em}
 \linespread{1.}
-
-\newcommand{\contentdir}{content}
 
 % TITLE SETTINGS
 \def\@courseName{Course Name Here}
@@ -38,3 +33,5 @@
   \end{center}
 }
 
+% CONTENT SETTINGS
+\newcommand{\contentdir}{content}
