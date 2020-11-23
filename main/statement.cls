@@ -20,7 +20,8 @@
 \newcommand*{\studentName}[1]{\def\@studentName{#1}}
 
 \def\@psForUniversity{cambridge}
-\newcommand{\psForUniversity}[1]{\def\@psForUniversity{#1}}
+\newcommand*{\psForUniversity}[1]{\def\@psForUniversity{#1}}
+\newcommand*{\uniName}{\@psForUniversity}
 
 \title{\@studentName{} --- Personal Statement for \@courseName{}}
 
