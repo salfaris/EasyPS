@@ -34,5 +34,16 @@
   \end{center}
 }
 
+\def\@showTitle{true}
+\newcommand*{\showTitle}[1]{\def\@showTitle{#1}}
+
+\newcommand{\generateTitle}{
+    \def\@trueText{true}
+    \ifx\@showTitle\@trueText
+        \maketitle
+    \else
+    \fi
+}
+
 % CONTENT SETTINGS
 \newcommand{\contentdir}{content}
