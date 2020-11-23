@@ -7,7 +7,7 @@ A simple and easy-to-use personal statement LaTeX framework. This solves the pro
 ## Download
 Clone the repository into any of your directory.
 ```zsh
-git clone https://github.com/salfaris/easy-pg-ps
+git clone https://github.com/salfaris/easy-ps
 ```
 
 ## Usage
