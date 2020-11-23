@@ -44,7 +44,7 @@ In the case that you don't want a title, just comment out `\maketitle`.
 ## :heavy_exclamation_mark: Warning for users
 1. Directory and file names are sensitive, so it is not advisable to change the names of, for example, `output` and `content` unless you know what you are doing.
    
-2. Do not edit anything after `\begin{document}`; unless you know what you are doing.
+2. Aside from commenting out `\maketitle`, do not edit anything after `\begin{document}`; unless you know what you are doing.
    
 3. Again we emphasize, `psForUniversity` **must** match a `.tex` file in the `content` directory.
 
