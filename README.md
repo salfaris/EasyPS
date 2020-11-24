@@ -33,7 +33,7 @@ git clone https://github.com/salfaris/easy-ps
 
     Advisable content filename examples: `oxford.tex` for the University of Oxford; `mit.tex` for the Massachusetts Institute of Technology. 
 
-4. Compile using the following command in your terminal.
+4. Build your PDF file as usual **or** compile using the following command in your terminal:
     ```zsh
     pdflatex -output-dir=output main.tex
     ```
