@@ -5,10 +5,14 @@ A simple and easy-to-use personal statement LaTeX framework. This solves the pro
 ![Screenshot](docs/example.png)
 
 ## Download
-Clone the repository into any of your directory.
-```zsh
-git clone https://github.com/salfaris/easy-ps
-```
+There are two main methods to download the file, choose one only.
+
+1. Download as a ZIP file by clicking the green **Code** button above.
+
+2. If you have git installed, just clone the repository.
+   ```zsh
+   git clone https://github.com/salfaris/easy-ps
+   ```
 
 ## Usage
 
