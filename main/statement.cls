@@ -44,10 +44,14 @@
 \newcommand*{\showTitle}[1]{\def\@showTitle{#1}}
 
 \newcommand{\generateTitle}{%
-    \def\@trueText{true}%
+    \def\@trueText{true}\def\@falseText{false}%
     \ifx\@showTitle\@trueText
         \maketitle
     \else
+        \ifx\@showTitle\@falseText
+        \else
+            \ClassError{Statement}{Expected only true/false for showTitle}{}
+        \fi
     \fi
 }
 
