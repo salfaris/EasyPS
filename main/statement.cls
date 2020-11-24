@@ -14,16 +14,22 @@
 
 % TITLE SETTINGS
 \def\@courseName{Course Name Here}
-\newcommand*{\courseName}[1]{\def\@courseName{#1}}
+\newcommand*{\courseName}[1]{%
+    \def\@courseName{#1}%
+}
 
 \def\@studentName{Student Name Here}
-\newcommand*{\studentName}[1]{\def\@studentName{#1}}
+\newcommand*{\studentName}[1]{%
+    \def\@studentName{#1}%
+}
 
 \def\@psForUniversity{cambridge}
 \newcommand*{\psForUniversity}[1]{\def\@psForUniversity{#1}}
 \newcommand*{\uniName}{\@psForUniversity}
 
-\title{\@studentName{} --- Personal Statement for \@courseName{}}
+\title{%
+    \@studentName\ --- Personal Statement for \@courseName\
+}
 
 \renewcommand{\@maketitle}{%
   \begin{center}
@@ -37,8 +43,8 @@
 \def\@showTitle{true}
 \newcommand*{\showTitle}[1]{\def\@showTitle{#1}}
 
-\newcommand{\generateTitle}{
-    \def\@trueText{true}
+\newcommand{\generateTitle}{%
+    \def\@trueText{true}%
     \ifx\@showTitle\@trueText
         \maketitle
     \else
