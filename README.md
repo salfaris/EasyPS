@@ -1,8 +1,14 @@
-# :page_facing_up: easy-ps
+# :page_facing_up: EasyPS
 
-A simple and easy-to-use personal statement LaTeX framework. This solves the problem of messy files when writing personal statements for multiple universities.
+**EasyPS** is a simple and easy-to-use personal statement LaTeX framework. This solves the problem of messy and duplicated tex files when writing personal statements for multiple universities.
 
 ![Screenshot](docs/example.png)
+
+### Table of contents
+- [Download](#download)
+- [Usage](#usage)
+- [Why should I use this?](#why-should-i-use-this)
+- [Warning for users :heavy_exclamation_mark: ](#heavy_exclamation_mark-warning-for-users)
 
 ## Download
 There are two main methods to download the file, choose one only.
@@ -27,7 +33,6 @@ There are two main methods to download the file, choose one only.
    psForUniversity{insert-uni-you-are-applying-to}
    showTitle{true/false}
    ```
-    Clearly, the first is global so you'd only need to change this once. However, the second, third and fourth will usually need to be changed constantly. 
 
     :heavy_exclamation_mark: There is one caveat for the `psForUniversity` variable; keep reading.
 
@@ -35,18 +40,44 @@ There are two main methods to download the file, choose one only.
 
     Note the file name **must** be the same word-for-word for otherwise, it will crash at compile time.
 
-    Advisable content filename examples: `oxford.tex` for the University of Oxford; `mit.tex` for the Massachusetts Institute of Technology. 
+4. Build your PDF file as usual.
 
-4. Build your PDF file as usual **or** compile using the following command in your terminal:
-    ```zsh
-    pdflatex -output-dir=output main.tex
-    ```
-    If you are using Sublime Text with LaTeXTools, then this package has a built-in setting to do exactly the above command so that you can just Cmd+B as usual. Likewise, there is usually a setting for other LaTeX editor like TexStudio and VSCode.
+## Why should I use this?
 
-5. Done! Your pdf file can be found in the `output` directory if you choose to use the command above or possibly in the `main` directory itself if you build as usual.
+Using this framework, you can easily add as many personal statements you want and activate/deactivate them by commenting out. For example, suppose this is my current settings in the preamble.
 
-## :heavy_exclamation_mark: Warning for users
-1. Directory and file names are sensitive, so it is not advisable to change the names of, in particular, `output`, `content` and `statement.cls` unless you know what you are doing.
+```tex
+\studentName{Sal Faris}
+
+% Uni of Cambridge
+\courseName{MPhil in Advanced Computer Science}
+\psForUniversity{cambridge}
+\showTitle{true}
+
+%% Imperial College London
+% \courseName{MSc Computing}
+% \psForUniversity{imperial}
+% \showTitle{false}
+```
+
+If I make an edit to my PS content for Imperial and want to build again, it is as simple as comment/uncomment code.
+
+```tex
+\studentName{Sal Faris}
+
+%% Uni of Cambridge
+% \courseName{MPhil in Advanced Computer Science}
+% \psForUniversity{cambridge}
+% \showTitle{true}
+
+% Imperial College London
+\courseName{MSc Computing}
+\psForUniversity{imperial}
+\showTitle{false}
+```
+
+## Warning for users :heavy_exclamation_mark:
+1. Directory and file names are sensitive, so changing the names of, for example, `content` and `easyps.cls` may cause a crash.
    
 2. Do not edit anything after `\begin{document}`; unless you know what you are doing.
    
