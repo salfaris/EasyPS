@@ -1,8 +1,12 @@
+% SPDX-License-Identifier: BSD-3-Clause
+% Copyright (c) 2020, Salman Ahmad Faris
+
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{statement}[2020/11/23 Personal Statement class]
+\ProvidesClass{easyps}[2020/11/23 EasyPS class]
 
 \LoadClass[12pt]{article}
 
+% REQUIRED PACKAGES
 \RequirePackage{lipsum}
 \RequirePackage{mathptmx}
 \RequirePackage{geometry}
