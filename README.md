@@ -29,8 +29,8 @@ There are two main methods to download the file, choose one only.
 2. Change these variables accordingly:
    ```tex
    studentName{insert-your-name}
-   courseName{insert-your-course-name}
    psForUniversity{insert-uni-you-are-applying-to}
+   courseName{insert-your-course-name}
    showTitle{true/false}
    ```
 
@@ -50,13 +50,13 @@ Using this framework, you can easily add as many personal statements you want an
 \studentName{Sal Faris}
 
 % Uni of Cambridge
+\psForUniversity{cambridge.tex}
 \courseName{MPhil in Advanced Computer Science}
-\psForUniversity{cambridge}
 \showTitle{true}
 
 %% Imperial College London
+% \psForUniversity{imperial.tex}
 % \courseName{MSc Computing}
-% \psForUniversity{imperial}
 % \showTitle{false}
 ```
 
@@ -66,13 +66,13 @@ If I make an edit to my PS content for Imperial and want to build again, it is a
 \studentName{Sal Faris}
 
 %% Uni of Cambridge
+% \psForUniversity{cambridge.tex}
 % \courseName{MPhil in Advanced Computer Science}
-% \psForUniversity{cambridge}
 % \showTitle{true}
 
 % Imperial College London
+\psForUniversity{imperial.tex}
 \courseName{MSc Computing}
-\psForUniversity{imperial}
 \showTitle{false}
 ```
 
