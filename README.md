@@ -5,10 +5,14 @@ A simple and easy-to-use personal statement LaTeX framework. This solves the pro
 ![Screenshot](docs/example.png)
 
 ## Download
-Clone the repository into any of your directory.
-```zsh
-git clone https://github.com/salfaris/easy-ps
-```
+There are two main methods to download the file, choose one only.
+
+1. Download as a ZIP file by clicking the green **Code** button above.
+
+2. If you have git installed, just clone the repository.
+   ```zsh
+   git clone https://github.com/salfaris/easy-ps
+   ```
 
 ## Usage
 
@@ -33,13 +37,13 @@ git clone https://github.com/salfaris/easy-ps
 
     Advisable content filename examples: `oxford.tex` for the University of Oxford; `mit.tex` for the Massachusetts Institute of Technology. 
 
-4. Compile using the following command in your terminal.
+4. Build your PDF file as usual **or** compile using the following command in your terminal:
     ```zsh
     pdflatex -output-dir=output main.tex
     ```
     If you are using Sublime Text with LaTeXTools, then this package has a built-in setting to do exactly the above command so that you can just Cmd+B as usual. Likewise, there is usually a setting for other LaTeX editor like TexStudio and VSCode.
 
-5. Done! Your pdf file can be found in the `output` directory.
+5. Done! Your pdf file can be found in the `output` directory if you choose to use the command above or possibly in the `main` directory itself if you build as usual.
 
 ## :heavy_exclamation_mark: Warning for users
 1. Directory and file names are sensitive, so it is not advisable to change the names of, in particular, `output`, `content` and `statement.cls` unless you know what you are doing.
