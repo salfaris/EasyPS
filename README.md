@@ -1,3 +1,7 @@
+### 🎉 2022 Update 🎉
+
+**EasyPS** now has an easier-to-use Python API! Check it out at [PyEasyPS](https://github.com/salfaris/PyEasyPS)!
+
 # :page_facing_up: EasyPS
 
 **EasyPS** is a simple and easy-to-use personal statement LaTeX framework. This solves the problem of messy and duplicated tex files when writing personal statements for multiple universities.
